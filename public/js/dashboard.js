@@ -1,5 +1,5 @@
 var h=300;
-var w=600;
+var w=800;
 var padding = 20;             
     
 
@@ -41,10 +41,6 @@ function buildLine(ds) {
                 .attr("class", "tooltip")               
                 .style("opacity", 0);
 
-
-
-    
-
     //scales
     var xScale = d3.time.scale()
                 .domain([minDate, maxDate])                
@@ -65,6 +61,17 @@ function buildLine(ds) {
         .y(function (d) {return yScale(d.projectcount); })
         .interpolate("linear");
         
+    //updated    
+    var lineFunApproved = d3.svg.line()
+        .x(function (d) {return xScale(getDate(d.month)); } )
+        .y(function (d) {return yScale(d.projectcountapproved); })
+        .interpolate("linear");
+
+    //updated  
+    var lineFunRejected = d3.svg.line()
+        .x(function (d) {return xScale(getDate(d.month)); } )
+        .y(function (d) {return yScale(d.projectcountrejected); })
+        .interpolate("linear");
 
     var svg = d3.select("body").append("svg").attr({ width:w, height:h, "id":"svg-"+ds.category});
     
@@ -80,13 +87,34 @@ function buildLine(ds) {
     var viz = svg.append("path")
             .attr({
                 d: lineFun(ds.monthlyprojectCount),
-                "stroke" : "#abdda4",
+                "stroke" : "#74add1",
                 "stroke-width": 2,
                 "fill" : "none",
                 "class": "path-"+ds.category
             });
 
-        var dots = svg.selectAll("circle")                            
+    //updated
+    var vizApproved = svg.append("path")
+            .attr({
+                d: lineFunApproved(ds.monthlyprojectCount),
+                "stroke" : "#abd9e9",
+                "stroke-width": 4,
+                "fill" : "none",
+                "class": "path-"+ds.category
+            });
+
+    //updated
+    var vizRejected = svg.append("path")
+            .attr({
+                d: lineFunRejected(ds.monthlyprojectCount),
+                "stroke" : "#74add1",
+                "stroke-width": 1,
+                "fill" : "none",
+                "class": "path-"+ds.category
+            });
+
+/*
+    var dots = svg.selectAll("circle")                            
                     .data(ds.monthlyprojectCount)
                     .enter()
                     .append("circle")
@@ -94,7 +122,7 @@ function buildLine(ds) {
                         cx: function(d) {return xScale(getDate(d.month)); },
                         cy: function (d) {return yScale(d.projectcount); },
                         r:  4,
-                        "fill": "#abd9e9",                                
+                        "fill": "#74add1",                                
                         class: "circle-"+ds.category
                     }) 
                     .on("mouseover", function(d) {      
@@ -110,7 +138,33 @@ function buildLine(ds) {
                             .duration(500)      
                             .style("opacity", 0);   
                     });
-    
+
+    // Dots approved                
+    var dotsApproved = svg.selectAll("circle")                            
+                    .data(ds.monthlyprojectCount)
+                    .enter()
+                    .append("circle")
+                    .attr({
+                        cx: function(d) {return xScale(getDate(d.month)); },
+                        cy: function (d) {return yScale(d.projectcountapproved); },
+                        r:  4,
+                        "fill": "#abd9e9",                                
+                        class: "circle-"+ds.category
+                    }) 
+                    .on("mouseover", function(d) {      
+                        tooltip.transition()        
+                            .duration(500)      
+                            .style("opacity", .9);      
+                        tooltip.html("<strong>projectcountapproved " + d.projectcountapproved + "</strong>")  
+                            .style("left", (d3.event.pageX) + "px")     
+                            .style("top", (d3.event.pageY - 28) + "px");    
+                    })                  
+                    .on("mouseout", function(d) {       
+                        tooltip.transition()        
+                            .duration(500)      
+                            .style("opacity", 0);   
+                    });    
+*/
 
     }
 
@@ -141,6 +195,17 @@ function updateLine(ds) {
         .y(function (d) {return yScale(d.projectcount); })
         .interpolate("linear");
         
+    //updated    
+    var lineFunApproved = d3.svg.line()
+        .x(function (d) {return xScale(getDate(d.month)); } )
+        .y(function (d) {return yScale(d.projectcountapproved); })
+        .interpolate("linear");
+
+    //updated  
+    var lineFunRejected = d3.svg.line()
+        .x(function (d) {return xScale(getDate(d.month)); } )
+        .y(function (d) {return yScale(d.projectcountrejected); })
+        .interpolate("linear");
 
     var svg = d3.select("body").select("#svg-"+ds.category);
     
@@ -156,7 +221,26 @@ function updateLine(ds) {
                 d: lineFun(ds.monthlyprojectCount)                        
             });
 
+    //updated 
+    var vizApproved = svg.selectAll(".path-"+ds.category) 
+                .transition() //add the transition and you're done!
+                .duration(500) //set the duration for more control
+                .ease("linear") //choose the type of animation linear, elastic, bounce, circle
+                .attr({
+                    d: lineFunApproved(ds.monthlyprojectCount)                        
+                });
+
+    //updated
+    var vizRejected = svg.selectAll(".path-"+ds.category) 
+                .transition() //add the transition and you're done!
+                .duration(500) //set the duration for more control
+                .ease("linear") //choose the type of animation linear, elastic, bounce, circle
+                .attr({
+                    d: lineFunRejected(ds.monthlyprojectCount)                        
+                });
+
     //fix for moving dots on update
+    /*
     var dots = svg.selectAll(".circle-"+ds.category)                                                   
             .transition() 
             .duration(500)
@@ -165,13 +249,14 @@ function updateLine(ds) {
                 cx: function(d) {return xScale(getDate(d.month)); },
                 cy: function (d) {return yScale(d.projectcount); }                              
             });                             
+*/
 
 }
     
 //show header
 function showHeader(ds) {
     d3.select("body").append("h1")
-        .text(ds.category + " projectcount (2015)");
+        .text(ds.category + " (2015)");
 }
 
 
