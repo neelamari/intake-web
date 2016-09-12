@@ -3,79 +3,77 @@
     "category": "ProjectStatus",
     "region": "West",
     "monthlyprojectCount":
-
       [{
         "month":20150101,
         "projectcount":38,
         "projectcountapproved":30,
-        "projectcountrejected":8,        
+        "projectcountrejected":8       
       },
       {
         "month":20150201,
         "projectcount":35,
         "projectcountapproved":33,
-        "projectcountrejected":2,        
+        "projectcountrejected":2       
       },
       {
         "month":20150301,
         "projectcount":41,
         "projectcountapproved":30,
-        "projectcountrejected":11,
+        "projectcountrejected":11
       },
       {
         "month":20150401,
         "projectcount":55,
         "projectcountapproved":39,
-        "projectcountrejected":16,
+        "projectcountrejected":16
       },
       {
         "month":20150501,
         "projectcount":58,
         "projectcountapproved":48,
-        "projectcountrejected":10,
+        "projectcountrejected":10
       },
       {
         "month":20150601,
         "projectcount":66,
         "projectcountapproved":51,
-        "projectcountrejected":15,
+        "projectcountrejected":15
       },
       {
         "month":20150701,
         "projectcount":74,
         "projectcountapproved":62,
-        "projectcountrejected":12,
+        "projectcountrejected":12
       },
       {
         "month":20150801,
         "projectcount":78,
         "projectcountapproved":69,
-        "projectcountrejected":9,
+        "projectcountrejected":9
       },
       {
         "month":20150901,
         "projectcount":38,
         "projectcountapproved":28,
-        "projectcountrejected":10,
+        "projectcountrejected":10
       },
       {
         "month":20151001,
         "projectcount":30,
         "projectcountapproved":25,
-        "projectcountrejected":5,
+        "projectcountrejected":5
       },
       {
         "month":20151101,
         "projectcount":26,
         "projectcountapproved":20,
-        "projectcountrejected":6,
+        "projectcountrejected":6
       },
       {
         "month":20151201,
         "projectcount":29,
         "projectcountapproved":15,
-        "projectcountrejected":14,
-      }
-    ]
+        "projectcountrejected":14
+      }]
   }
 ]} 

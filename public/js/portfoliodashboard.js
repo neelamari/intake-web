@@ -178,7 +178,7 @@ function showHeader(ds) {
 //get data and draw things  
 //d3.json("https://api.github.com/repos/bsullins/d3js-resources/contents/monthlyprojectCountbyCategoryMultiple.json", function(error, data) {
     
-d3.json("https://api.github.com/repos/neelamari/intake-web/contents/public/MonthlyCountByStatus2.json", function(error, data) {
+d3.json("https://api.github.com/repos/neelamari/intake-web/contents/public/MonthlyCountByStatus.json", function(error, data) {
     
     if(error) {
         console.log(error);
