@@ -137,7 +137,7 @@ d3.json("https://api.github.com/repos/neelamari/intake-web/contents/public/Month
         // console.log(data); //we're golden!
     }
 
-    var decodedData = JSON.parse(window.atob(data.content));
+    var decodedData = JSON.parse(window.atob(data.contents));
 
     // console.log(decodedData.contents);
 
