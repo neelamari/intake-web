@@ -2,165 +2,165 @@
  {
     "category": "Received",
     "region": "West",
-    "monthlyCount":
+    "monthlyprojectCount":
 
       [{
         "month":20150101,
-        "count":38
+        "projectcount":38
       },
       {
         "month":20150201,
-        "count":35
+        "projectcount":35
       },
       {
         "month":20150301,
-        "count":41
+        "projectcount":41
       },
       {
         "month":20150401,
-        "count":55
+        "projectcount":55
       },
       {
         "month":20150501,
-        "count":58
+        "projectcount":58
       },
       {
         "month":20150601,
-        "count":66
+        "projectcount":66
       },
       {
         "month":20150701,
-        "count":74
+        "projectcount":74
       },
       {
         "month":20150801,
-        "count":78
+        "projectcount":78
       },
       {
         "month":20150901,
-        "count":38
+        "projectcount":38
       },
       {
         "month":20151001,
-        "count":30
+        "projectcount":30
       },
       {
         "month":20151101,
-        "count":26
+        "projectcount":26
       },
       {
         "month":20151201,
-        "count":29
+        "projectcount":29
       }
     ]
   },  
   {
     "category": "Complete",
     "region": "West",
-    "monthlyCount":
+    "monthlyprojectCount":
 
       [{
         "month":20150101,
-        "count":33
+        "projectcount":33
       },
       {
         "month":20150201,
-        "count":32
+        "projectcount":32
       },
       {
         "month":20150301,
-        "count":30
+        "projectcount":30
       },
       {
         "month":20150401,
-        "count":50
+        "projectcount":50
       },
       {
         "month":20150501,
-        "count":50
+        "projectcount":50
       },
       {
         "month":20150601,
-        "count":62
+        "projectcount":62
       },
       {
         "month":20150701,
-        "count":61
+        "projectcount":61
       },
       {
         "month":20150801,
-        "count":63
+        "projectcount":63
       },
       {
         "month":20150901,
-        "count":30
+        "projectcount":30
       },
       {
         "month":20151001,
-        "count":20
+        "projectcount":20
       },
       {
         "month":20151101,
-        "count":20
+        "projectcount":20
       },
       {
         "month":20151201,
-        "count":20
+        "projectcount":20
       }
     ]
   },
   {
-    "category": "On-Hold/Rejected",
+    "category": "On-Hold",
     "region": "West",
-    "monthlyCount":
+    "monthlyprojectCount":
 
       [{
         "month":20150101,
-        "count":5
+        "projectcount":5
       },
       {
         "month":20150201,
-        "count":3
+        "projectcount":3
       },
       {
         "month":20150301,
-        "count":11
+        "projectcount":11
       },
       {
         "month":20150401,
-        "count":5
+        "projectcount":5
       },
       {
         "month":20150501,
-        "count":8
+        "projectcount":8
       },
       {
         "month":20150601,
-        "count":2
+        "projectcount":2
       },
       {
         "month":20150701,
-        "count":13
+        "projectcount":13
       },
       {
         "month":20150801,
-        "count":15
+        "projectcount":15
       },
       {
         "month":20150901,
-        "count":8
+        "projectcount":8
       },
       {
         "month":20151001,
-        "count":10
+        "projectcount":10
       },
       {
         "month":20151101,
-        "count":6
+        "projectcount":6
       },
       {
         "month":20151201,
-        "count":9
+        "projectcount":9
       }
     ]
   }

@@ -11,14 +11,14 @@
         .x-axis path, .y-axis path,
         .x-axis line, .y-axis line {
             fill: none;
-            stroke: yellow;
+            stroke: #66c2a5;
             shape-rendering: crispEdges;
         }
         
         .x-axis, .y-axis text {
             font-family: sans-serif;
-            font-size: 10px;            
-            stroke: white;
+            font-size: 10px;
+            stroke: #66c2a5;
         }
         
         h1 {
@@ -26,6 +26,24 @@
             font-weight: 300;
             font-size: 16px;
         }
+        
+        div.tooltip {   
+                position: absolute;
+                max-width: 200px;
+                height: auto;
+                padding: 5px;
+                background-color: #3288bd;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                pointer-events: none; /* MUI IMPORTANTE! */
+                font-family: sans-serif;
+                font-size:12px;
+        }
+
     </style>
 
    <link rel="stylesheet" href="stylesheets/style.css">
@@ -40,7 +58,7 @@
         <p>Choose Date Range
         <select id="date-option">
           <option value="12">Last Year</option>
-          <option value="6">Last 6/mo</option>
+          <option value="6">Last 6 months</option>
           <option value="3">Last Quarter</option>
         </select>
         </p>
