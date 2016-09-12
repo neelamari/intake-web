@@ -1,166 +1,80 @@
 { "contents": [
  {
-    "category": "Received",
+    "category": "ProjectStatus",
     "region": "West",
     "monthlyprojectCount":
 
       [{
         "month":20150101,
-        "projectcount":38
+        "projectcount":38,
+        "projectcountapproved":30,
+        "projectcountrejected":8,        
       },
       {
         "month":20150201,
-        "projectcount":35
+        "projectcount":35,
+        "projectcountapproved":33,
+        "projectcountrejected":2,        
       },
       {
         "month":20150301,
-        "projectcount":41
+        "projectcount":41,
+        "projectcountapproved":30,
+        "projectcountrejected":11,
       },
       {
         "month":20150401,
-        "projectcount":55
+        "projectcount":55,
+        "projectcountapproved":39,
+        "projectcountrejected":16,
       },
       {
         "month":20150501,
-        "projectcount":58
+        "projectcount":58,
+        "projectcountapproved":48,
+        "projectcountrejected":10,
       },
       {
         "month":20150601,
-        "projectcount":66
+        "projectcount":66,
+        "projectcountapproved":51,
+        "projectcountrejected":15,
       },
       {
         "month":20150701,
-        "projectcount":74
+        "projectcount":74,
+        "projectcountapproved":62,
+        "projectcountrejected":12,
       },
       {
         "month":20150801,
-        "projectcount":78
+        "projectcount":78,
+        "projectcountapproved":69,
+        "projectcountrejected":9,
       },
       {
         "month":20150901,
-        "projectcount":38
+        "projectcount":38,
+        "projectcountapproved":28,
+        "projectcountrejected":10,
       },
       {
         "month":20151001,
-        "projectcount":30
+        "projectcount":30,
+        "projectcountapproved":25,
+        "projectcountrejected":5,
       },
       {
         "month":20151101,
-        "projectcount":26
+        "projectcount":26,
+        "projectcountapproved":20,
+        "projectcountrejected":6,
       },
       {
         "month":20151201,
-        "projectcount":29
-      }
-    ]
-  },  
-  {
-    "category": "Complete",
-    "region": "West",
-    "monthlyprojectCount":
-
-      [{
-        "month":20150101,
-        "projectcount":33
-      },
-      {
-        "month":20150201,
-        "projectcount":32
-      },
-      {
-        "month":20150301,
-        "projectcount":30
-      },
-      {
-        "month":20150401,
-        "projectcount":50
-      },
-      {
-        "month":20150501,
-        "projectcount":50
-      },
-      {
-        "month":20150601,
-        "projectcount":62
-      },
-      {
-        "month":20150701,
-        "projectcount":61
-      },
-      {
-        "month":20150801,
-        "projectcount":63
-      },
-      {
-        "month":20150901,
-        "projectcount":30
-      },
-      {
-        "month":20151001,
-        "projectcount":20
-      },
-      {
-        "month":20151101,
-        "projectcount":20
-      },
-      {
-        "month":20151201,
-        "projectcount":20
-      }
-    ]
-  },
-  {
-    "category": "On-Hold",
-    "region": "West",
-    "monthlyprojectCount":
-
-      [{
-        "month":20150101,
-        "projectcount":5
-      },
-      {
-        "month":20150201,
-        "projectcount":3
-      },
-      {
-        "month":20150301,
-        "projectcount":11
-      },
-      {
-        "month":20150401,
-        "projectcount":5
-      },
-      {
-        "month":20150501,
-        "projectcount":8
-      },
-      {
-        "month":20150601,
-        "projectcount":2
-      },
-      {
-        "month":20150701,
-        "projectcount":13
-      },
-      {
-        "month":20150801,
-        "projectcount":15
-      },
-      {
-        "month":20150901,
-        "projectcount":8
-      },
-      {
-        "month":20151001,
-        "projectcount":10
-      },
-      {
-        "month":20151101,
-        "projectcount":6
-      },
-      {
-        "month":20151201,
-        "projectcount":9
+        "projectcount":29,
+        "projectcountapproved":15,
+        "projectcountrejected":14,
       }
     ]
   }
