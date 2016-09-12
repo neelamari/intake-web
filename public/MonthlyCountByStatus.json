@@ -53,21 +53,21 @@
       },
       {
         "month":20150901,
-        "projectcount":38,
-        "projectcountapproved":28,
-        "projectcountrejected":10
+        "projectcount":48,
+        "projectcountapproved":33,
+        "projectcountrejected":15
       },
       {
         "month":20151001,
-        "projectcount":30,
+        "projectcount":40,
         "projectcountapproved":25,
-        "projectcountrejected":5
+        "projectcountrejected":15
       },
       {
         "month":20151101,
         "projectcount":26,
-        "projectcountapproved":20,
-        "projectcountrejected":6
+        "projectcountapproved":15,
+        "projectcountrejected":11
       },
       {
         "month":20151201,

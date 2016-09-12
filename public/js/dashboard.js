@@ -107,7 +107,7 @@ function buildLine(ds) {
     var vizRejected = svg.append("path")
             .attr({
                 d: lineFunRejected(ds.monthlyprojectCount),
-                "stroke" : "#74add1",
+                "stroke" : "#1c9099",
                 "stroke-width": 1,
                 "fill" : "none",
                 "class": "path-"+ds.category
